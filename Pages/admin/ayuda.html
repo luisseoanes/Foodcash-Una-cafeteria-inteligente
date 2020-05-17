@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Recarga</title>
+  <link rel="stylesheet" href="../../css/interno.css">
+  <link rel="stylesheet" href="../../css/ayuda.css">
+  <link rel="stylesheet" href="../../css/fondo.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+		$(document).ready(function(){
+			$(".hamburger").click(function(){
+			   $(".wrapper").toggleClass("collapse");
+			});
+		});
+	</script>
+      <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.png">
+    </head>
+    <body>
+
+            <div class="wrapper">
+                    <div class="top_navbar">
+                      <div class="hamburger">
+                         <div class="one"></div>
+                         <div class="two"></div>
+                         <div class="three"></div>
+                      </div>
+                      <div class="top_menu">
+                        <div class="logo">Food Cash</div>
+                        <ul>
+                          <li><a href="Actualiza.html">
+                            <i class="fas fa-cloud-upload-alt" title="Actualiza tus datos"></i></a></li>
+                          <li><a href="Cuenta.html">
+                            <i class="fas fa-user" title="Tu cuenta"></i>
+                            </a></li>
+                          <li><a href="../../logout.php">
+                            <i class="fas fa-arrow-right" title="Cerrar Sesion"></i>
+                            </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div class="sidebar">
+                      <ul>
+                        <li><a href="../../admin.php">
+                          <span class="icon"><i class="fas fa-home"></i></span>
+                          <span class="title">Inicio</span></a></li>
+                        <li><a href="Mi informacion.html">
+                          <span class="icon"><i class="fas fa-address-card"></i></span>
+                          <span class="title">Mi informacion</span>
+                          </a></li>
+                        <li><a href="Alimentacion.html">
+                          <span class="icon"><i class="fas fa-carrot"></i></span>
+                          <span class="title">Mi alimentacion</span>
+                          </a></li>
+                        <li><a href="Recarga.html">
+                          <span class="icon"><i class="fas fa-dollar-sign"></i></span>
+                          <span class="title">Recarga</span>
+                          </a></li>
+                        <li><a href="#" class="cancel">
+                          <span class="icon"><i class="fas fa-hamburger"></i></span>
+                          <span class="title">Comidas</span>
+                          <span class="icon"><i class="fas fa-lock"></i></span>
+                          </a></li>
+                          <li><a href="#" class="cancel">
+                            <span class="icon"><i class="fas fa-users-cog"></i></span>
+                            <span class="title">Parental</span>
+                            <span class="icon"><i class="fas fa-lock"></i></span>
+                            </a></li>
+                          <li><a href="ayuda.html" class="active">
+                            <span class="icon"><i class="fas fa-headset"></i></span>
+                            <span class="title">Ayuda</span>
+                            </a></li>
+                    </ul>
+                    </div>
+                  <br>
+                  <form action="contact.php" method="post" align="center">
+                    <br>
+                    <div class="elem-group">
+                      <label for="name">Tu nombre</label>
+                      <input type="text" id="name" name="visitor_name" placeholder="Luis Seoanes" pattern=[A-Z\sa-z]{3,20} required>
+                    </div>
+                    <div class="elem-group">
+                      <label for="email">Tu correo</label>
+                      <input type="email" id="email" name="visitor_email" placeholder="luis.seoanes@gimsaber.edu.co" required>
+                    </div>
+                    <div class="elem-group">
+                      <label for="department-selection">Elige a que departamento va dirijido</label>
+                      <select id="department-selection" name="concerned_department" required>
+                          <option value="">Selecciona un departamento</option>
+                          <option value="billing">Facturacion</option>
+                          <option value="marketing">Marketing</option>
+                          <option value="technical support">Soporte tecnico</option>
+                      </select>
+                    </div>
+                    <div class="elem-group">
+                      <label for="title">Razon por la que nos contactas</label>
+                      <input type="text" id="title" name="email_title" placeholder="Perdida de contraseña" pattern=[A-Za-z0-9\s]{8,60}>
+                    </div>
+                    <div class="elem-group">
+                      <label for="message">Escribe tu mensaje</label>
+                      <textarea id="message" name="visitor_message" placeholder="Explicanos de forma especifica" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                  </form>
+    </body>
+    </html>

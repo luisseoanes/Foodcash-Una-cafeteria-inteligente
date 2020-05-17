@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Comidas</title>
+  <link rel="stylesheet" href="../../css/interno.css">
+  <link rel="stylesheet" href="../../css/Comidas.css">
+  <link rel="stylesheet" href="../../css/fondo.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <script>
+		$(document).ready(function(){
+			$(".hamburger").click(function(){
+			   $(".wrapper").toggleClass("collapse");
+			});
+		});
+	</script>
+      <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.png">
+    </head>
+    <body>
+            <div class="wrapper">
+                    <div class="top_navbar">
+                      <div class="hamburger">
+                         <div class="one"></div>
+                         <div class="two"></div>
+                         <div class="three"></div>
+                      </div>
+                      <div class="top_menu">
+                        <div class="logo">Food Cash</div>
+                        <ul>
+                          <li><a href="Actualiza.html">
+                            <i class="fas fa-cloud-upload-alt" title="Actualiza tus datos"></i></a></li>
+                          <li><a href="Cuenta.html">
+                            <i class="fas fa-user" title="Tu cuenta"></i>
+                            </a></li>
+                          <li><a href="../../logout.php">
+                            <i class="fas fa-arrow-right" title="Cerrar Sesion"></i>
+                            </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div class="sidebar">
+                      <ul>
+                        <li><a href="../../estudiantes.php">
+                          <span class="icon"><i class="fas fa-home"></i></span>
+                          <span class="title">Inicio</span></a></li>
+                        <li><a href="Mi informacion.html">
+                          <span class="icon"><i class="fas fa-address-card"></i></span>
+                          <span class="title">Mi informacion</span>
+                          </a></li>
+                        <li><a href="Alimentacion.html">
+                          <span class="icon"><i class="fas fa-carrot"></i></span>
+                          <span class="title">Mi alimentacion</span>
+                          </a></li>
+                        <li><a href="Recarga.html">
+                          <span class="icon"><i class="fas fa-dollar-sign"></i></span>
+                          <span class="title">Recarga</span>
+                          </a></li>
+                        <li><a href="#" class="cancel">
+                          <span class="icon"><i class="fas fa-hamburger"></i></span>
+                          <span class="title">Comidas</span>
+                          <span class="icon"><i class="fas fa-lock"></i></span>
+                          </a></li>
+                          <li><a href="#" class="cancel">
+                            <span class="icon"><i class="fas fa-users-cog"></i></span>
+                            <span class="title">Parental</span>
+                            <span class="icon"><i class="fas fa-lock"></i></span>
+                            </a></li>
+                          <li><a href="ayuda.html">
+                            <span class="icon"><i class="fas fa-headset"></i></span>
+                            <span class="title">Ayuda</span>
+                            </a></li>
+                    </ul>
+                    </div>
+        </div>
+        <div id="main-container">
+          <table>
+              <thead>
+                  <tr>
+                      <th>Comidas</th><th>Precio</th><th>Calorias</th><th>Bloquear</th>
+                  </tr>
+              </thead>
+  
+              <tr>
+                  <td>Deditos</td><td>  </td><td>144 cal</td><td>
+                    <input type="radio" name="Deditos" id="si">
+                    <label for="SI">SI</label> 
+                    <input type="radio" name="Deditos" id="no">
+                    <label for="no">NO</label> </td>
+              </tr>
+              <tr>
+                  <td>Empanada</td><td>  </td><td>263 cal</td><td> 
+                    <input type="radio" name="Empanada" id="si">
+                    <label for="SI">SI</label> 
+                    <input type="radio" name="Empanada" id="no">
+                    <label for="no">NO</label> </td>
+              </tr>
+              <tr>
+                  <td>Arepa</td><td>  </td><td>165 cal</td><td> 
+                    <input type="radio" name="Arepa" id="si">
+                    <label for="SI">SI</label> 
+                    <input type="radio" name="Arepa" id="no">
+                    <label for="no">NO</label> </td>
+              </tr>
+              <tr>
+                  <td>Galletas saladas</td><td>  </td><td>55 cal</td><td> 
+                    <input type="radio" name="Galletas saladas" id="si">
+                    <label for="SI">SI</label> 
+                    <input type="radio" name="Galletas saladas" id="no">
+                    <label for="no">NO</label> </td>
+              </tr>
+              <tr>
+                  <td>Perro pequeño</td><td>  </td><td>162 cal</td><td> 
+                    <input type="radio" name="Perro pequeño" id="si">
+                    <label for="SI">SI</label> 
+                    <input type="radio" name="Perro pequeño" id="no">
+                    <label for="no">NO</label> </td>
+              </tr>
+              <tr>
+                  <td>Perro grande</td><td>  </td><td>242 cal</td><td> 
+                    <input type="radio" name="Perro grande" id="si">
+                    <label for="SI">SI</label> 
+                    <input type="radio" name="Perro grande" id="no">
+                    <label for="no">NO</label> </td>
+              </tr>
+              <tr>
+                  <td>Crispetas</td><td>  </td><td>31 cal</td><td> 
+                    <input type="radio" name="Crispetas" id="si">
+                    <label for="SI">SI</label> 
+                    <input type="radio" name="Crispetas" id="no">
+                    <label for="no">NO</label> </td>
+              </tr>
+              <tr>
+                  <td>Golpe con todo</td><td>  </td><td>210 cal</td><td> 
+                    <input type="radio" name="Golpe con todo" id="si">
+                    <label for="SI">SI</label> 
+                    <input type="radio" name="Golpe con todo" id="no">
+                    <label for="no">NO</label> </td>
+              </tr>
+              <tr>
+                  <td>sandwich</td><td>  </td><td>216 cal</td><td> 
+                    <input type="radio" name="sandwich" id="si">
+                    <label for="SI">SI</label> 
+                    <input type="radio" name="sandwich" id="no">
+                    <label for="no">NO</label> </td>
+              </tr>
+              <tr>
+                <td>Hamburguesa</td><td>  </td><td>278 cal</td><td> 
+                  <input type="radio" name="Hamburguesa" id="si">
+                  <label for="SI">SI</label> 
+                  <input type="radio" name="Hamburguesa" id="no">
+                  <label for="no">NO</label> </td>
+            </tr>
+            <tr>
+                <td>Pastelito</td><td>  </td><td>210 cal</td><td> 
+                  <input type="radio" name="Pastelito" id="si">
+                  <label for="SI">SI</label> 
+                  <input type="radio" name="Pastelito" id="no">
+                  <label for="no">NO</label> </td>
+            </tr>
+
+            <thead>
+              <tr>
+                  <th>Bebidas</th><th>Precio</th><th>Calorias</th><th>Bloquear</th>
+              </tr>
+          </thead>
+              <tr>
+                  <td>Gaseosa</td><td>$1.000</td><td>179 cal</td><td>
+                    <input type="radio" name="Gaseosa" id="si">
+                    <label for="SI">SI</label> 
+                    <input type="radio" name="Gaseosa" id="no">
+				            <label for="no">NO</label></td>
+              </tr>
+              <tr>
+                  <td>Jugo</td><td>$1.500</td><td>47 cal<ca/td><td>
+                    <input type="radio" name="Jugo" id="si">
+                    <label for="SI">SI</label> 
+                    <input type="radio" name="Jugo" id="no">
+                    <label for="no">NO</label></td>
+              </tr>
+              <tr>
+                  <td>Pony Malta</td><td>$1.400</td><td>145 cal</td><td> 
+                    <input type="radio" name="Pony Malta" id="si">
+                    <label for="SI">SI</label> 
+                    <input type="radio" name="Pony Malta" id="no">
+                    <label for="no">NO</label> </td>
+              </tr>
+              <tr>
+                  <td>Agua</td><td>$500 - $600</td><td>0 cal</td><td> 
+                    <input type="radio" name="Agua" id="si">
+                    <label for="SI">SI</label> 
+                    <input type="radio" name="Agua" id="no">
+                    <label for="no">NO</label> </td>
+              </tr>
+          </table>
+      </div>
+    </body>
+    </html>
